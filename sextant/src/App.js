@@ -2,6 +2,7 @@
 import './App.css';
 import Banner from './component/Banner';
 import Exhibit from './component/Exhibit';
+import IpAddress from './component/IpAddress';
 
 
 function App() {
@@ -9,14 +10,14 @@ function App() {
     <div>
       <Banner />
       <main className="p-6 max-w-4xl mx-auto">
-        <Exhibit title="User Stats">
-          <p>Total users: 1,234</p>
+        <Exhibit title="Your Public IPv4 Address">
+          <IpAddress version="v4" />
         </Exhibit>
 
-        <Exhibit title="System Health">
-          <p>Everything is running smoothly! ✅</p>
+        <Exhibit title="Your Public IPv6 Address">
+          <IpAddress version="v6" />
         </Exhibit>
-        </main>
+      </main>
     </div>
   );
 }
